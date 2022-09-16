@@ -1,0 +1,75 @@
+.primary-btn {
+    padding: 1.5rem 2.55rem;
+    background-color: $color-dark-pink;
+    border-radius: 24px;
+    box-shadow: 1rem 1rem 25px -1rem $color-pink-shadow;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.12px;
+    color: $color-water-white;
+    display: inline-block;
+    &:hover {
+        background-color: $color-charm-pink;
+    }
+    &:active {
+        background-color: $color-pink-shadow;
+    }
+}
+
+.secondary-btn {
+    padding: 1.4rem 3.1rem;
+    background-color: transparent;
+    border: 1px solid $color-water-white;
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.12px;
+    color: $color-water-white;
+    display: inline-block;
+    &:hover {
+        background-color: $color-white;
+        color: $color-mirage-blue;
+    }
+    &:active {
+        background-color: transparent;
+        color: $color-water-white;
+        opacity: 0.6;
+    }
+}
+
+.last-btn {
+    padding: 1.5rem 2.65rem;
+    background-color: transparent;
+    border: 1px solid $color-juan-blue;
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.12px;
+    color: $color-juan-blue;
+    display: inline-block;
+    &:hover {
+        background-color: $color-juan-blue;
+        color: $color-white;
+    }
+    &:active {
+        background-color: transparent;
+        color: $color-juan-blue;
+        opacity: 0.6;
+    }
+}
+
+.bars-btn {
+    display: none;
+    margin-left: auto;
+    outline: none;
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @include responsive(phone) {
+        display: block;
+    }
+    
+}
